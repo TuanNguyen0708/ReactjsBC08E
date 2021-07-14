@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 export default class FooterComponent extends Component {
     render() {
         return (
-            <div className="footer bg-danger text-white display-4 d-flex justify-content-center align-items-center">
-                Footer Component
-            </div>
+            <div className="bg-danger text-white navigation display-4 d-flex justify-content-center align-items-center">
+            <div>Footer component</div> 
+        </div>
         )
     }
 }

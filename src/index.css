@@ -1,14 +1,14 @@
-*{
-  padding: 0;
-  margin: 0;
-}
 .header {
-  background-color: rgb(128, 180, 130);
+  background-color: rgb(9, 160, 110);
   color: #fff;
   height: 50px;
 }
-.nav {
-  background-color: rgb(17, 207, 144);
-  color: #fff;
-  height: 50px;
+
+
+
+p{
+  color: red;
 }
+
+
+
