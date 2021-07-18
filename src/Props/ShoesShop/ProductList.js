@@ -18,6 +18,7 @@ export default class ProductList extends Component {
                 <h3 className="text-center">Shoes Shop</h3>
                 <div className="row">
                    {this.renderProduct()}
+                   
                 </div>
             </div>
         )
