@@ -24,6 +24,7 @@ export default class BaiTapThuKinh extends Component {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     }}>
+                    <div style={{backgroundColor: 'rgba(0, 0, 0, 0.4)', width:'100%', height: '100%'}}>
                     <h3 className="d-flex justify-content-center p-4" style={{color: 'white', backgroundColor: 'rgb(32, 33, 36)', opacity: '0.5'}}>TRY GLASSES APP ONLINE</h3>
                     <div className="d-flex justify-content-around mt-4">
                         <div className="text-center" style={{backgroundImage: `url("./img/Bài tập glasses/glassesImage/model.jpg")`,
@@ -31,11 +32,11 @@ export default class BaiTapThuKinh extends Component {
                         height: '300px',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'}}>
-                            <img style={{width:'140px', height: '50px', marginTop: '70px'}} src="./img/Bài tập glasses/glassesImage/v7.png" />
+                            <img style={{width:'140px', height: '50px', marginTop: '70px', opacity: '0.7'}} src="./img/Bài tập glasses/glassesImage/v7.png" />
                             <div className="text-left" style={{backgroundColor: 'rgba(255, 193, 0, 0.4)', marginTop: '100px'}}>
                                 <h5>FENDI F8750</h5>
                                 <span>
-                                    Lorem ipsum dolor sit amet, else elit. about ut omnis it my, on ea.
+                                    Lorem ipsum dolor sit amet, else elit about ut omnis it my on ea.
                                 </span>
                             </div>
                         </div>
@@ -44,7 +45,7 @@ export default class BaiTapThuKinh extends Component {
                         height: '300px',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'}}>
-                            <img style={{width:'140px', height: '50px', marginTop: '70px'}} src={this.state.imgSrc}/>
+                            <img style={{width:'140px', height: '50px', marginTop: '70px', opacity:'0.7'}} src={this.state.imgSrc}/>
                         </div>
                     </div>
                     <div style={{display: 'flex', width: '100%', marginTop: '50px'}}>
@@ -52,7 +53,7 @@ export default class BaiTapThuKinh extends Component {
                         height: '250px',
                         margin: '0 auto',
                         padding: '20px 40px',
-                        backgroundColor: 'gray',}}>
+                        backgroundColor: 'white',}}>
                             <img style={{width: '100px', height: '50px', margin: '25px 25px', border: '1px solid black'}} src="./img/Bài tập glasses/glassesImage/g1.jpg" onClick={() => {
                                 this.changeGlass('v1')
                             }} />
@@ -83,6 +84,8 @@ export default class BaiTapThuKinh extends Component {
                             
                         </div>
                     </div>
+                    </div>
+                    
                     
                 </div>
             </div>
