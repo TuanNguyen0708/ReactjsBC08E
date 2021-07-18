@@ -6,7 +6,9 @@
 // import Demo from "./Databinding/Demo";
 // import HandleEvent from "./HandleEvent/HandleEvent";
 // import StyleComponent from "./StyleComponent/StyleComponent";
-import StateDemo from "./StateDemo/StateDemo"
+import BaiTapThuKinh from "./components/BaiTapThuKinh/BaiTapThuKinh";
+
+// import StateDemo from "./StateDemo/StateDemo"
 function App() {
   return (
     <div className="App">
@@ -18,7 +20,8 @@ function App() {
 
           {/* <StyleComponent /> */}
           {/* <p className="fontBold">ahihi</p> */}
-          <StateDemo />
+          {/* <StateDemo /> */}
+          <BaiTapThuKinh />
      
     </div>
   );
