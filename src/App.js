@@ -22,9 +22,6 @@ function App() {
           {/* <p className="fontBold">ahihi</p> */}
           {/* <StateDemo /> */}
           <BaiTapThuKinh />
-
-          
-     
     </div>
   );
 }
