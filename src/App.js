@@ -9,7 +9,10 @@
 // import BaiTapThuKinh from "./components/BaiTapThuKinh/BaiTapThuKinh";
 // import HomeLayout from "./Props/DemoProps/HomeLayout";
 // import RenderWithMap from "./RenderWithMap/RenderWithMap";
-import ShoesShop from "./Props/ShoesShop/ShoesShop";
+// import ShoesShop from "./Props/ShoesShop/ShoesShop";
+// import BaiTapXemChiTiet from "./Props/BaiTapXemChiTiet/BaiTapXemChiTiet";
+
+import ExerciseCarrStore from "./Props/ExerciseCarrStore/ExerciseCarrStore";
 
 // import StateDemo from "./StateDemo/StateDemo"
 function App() {
@@ -27,7 +30,9 @@ function App() {
           {/* <BaiTapThuKinh /> */}
           {/* <HomeLayout /> */}
           {/* <RenderWithMap /> */}
-          <ShoesShop />
+          {/* <ShoesShop /> */}
+          {/* <BaiTapXemChiTiet /> */}
+          <ExerciseCarrStore />
     </div>
   );
 }
