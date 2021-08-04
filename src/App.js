@@ -15,7 +15,8 @@
 // import ExerciseCart from "./Props/ExerciseCart/ExerciseCart";
 // import BaiTapGioHang from "./DemoRedux/BaiTapGioHang/BaiTapGioHang";
 // import BaiTapGameXucXac from "./DemoRedux/BaiTapGameXucXac/BaiTapGameXucXac";
-import BaiTapGameOanTuTi from "./DemoRedux/BaiTapGameOanTuTi/BaiTapGameOanTuTi";
+// import BaiTapGameOanTuTi from "./DemoRedux/BaiTapGameOanTuTi/BaiTapGameOanTuTi";
+import BaiTapBookingTicket from "./DemoRedux/BaiTapBookingTicket/BaiTapBookingTicket";
 
 // import StateDemo from "./StateDemo/StateDemo"
 function App() {
@@ -39,7 +40,8 @@ function App() {
           {/* <ExerciseCart /> */}
           {/* <BaiTapGioHang /> */}
           {/* <BaiTapGameXucXac /> */}
-          <BaiTapGameOanTuTi />
+          {/* <BaiTapGameOanTuTi /> */}
+          <BaiTapBookingTicket />
     </div>
   );
 }
