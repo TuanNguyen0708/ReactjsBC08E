@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export default class ThongTinGhe extends Component {
+import { connect } from 'react-redux'
+class ThongTinGhe extends Component {
     render() {
         return (
             <div>
@@ -22,21 +22,32 @@ export default class ThongTinGhe extends Component {
                         <tr className='text-light' style={{fontSize:'25px'}}>
                             <th>Số Ghế</th>
                             <th>Giá</th>
-                            <th>Hàng</th>
+                            <th></th>
                         </tr>
                         </thead>
-                        <tbody>
-                            <tr className='text-light'>
-                                <th>Số Ghế</th>
-                                <th>Giá</th>
-                                <th></th>
-                            </tr>
-                            <tr className='text-light'>
-                                <th>Số Ghế</th>
-                                <th>Giá</th>
-                                <th></th>
-                            </tr>
+                        <tbody className='text-warning'>
+                           {this.props.danhSachGheDangDat.map((gheDangDat,index)=> {
+                               return <tr key={index}>
+                                   <td>{gheDangDat.soGhe}</td>
+                                   <td>{(gheDangDat.gia).toLocaleString()}</td>
+                                   <td><button onClick={()=>{
+                                       this.props.dispatch({
+                                           type: 'HUY_GHE',
+                                           soGhe:gheDangDat.soGhe
+                                       })
+                                   }}>Hủy</button></td>
+                               </tr>
+                           })}
                         </tbody>
+                        <tfoot>
+                            <tr className='text-warning'>
+                                <td></td>
+                                <td>Tổng Tiền</td>
+                                <td>{this.props.danhSachGheDangDat.reduce((tongTien,gheDangDat,index) => {
+                                    return tongTien += gheDangDat.gia
+                                },0).toLocaleString()}</td>
+                            </tr>
+                        </tfoot>
                       
                     </table>
                 </div>
@@ -47,3 +58,10 @@ export default class ThongTinGhe extends Component {
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        danhSachGheDangDat: state.baiTapDatVeReducer.danhSachGheDangDat
+    }
+}
+export default connect(mapStateToProps)(ThongTinGhe)
