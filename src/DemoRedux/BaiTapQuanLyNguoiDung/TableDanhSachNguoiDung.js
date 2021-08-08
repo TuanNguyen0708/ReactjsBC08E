@@ -40,7 +40,13 @@ class TableDanhSachNguoiDung extends Component {
                                             }
                                             this.props.dispatch(action)
                                         }}>Xóa</button>
-                                        <button className='btn btn-outline-primary'>Chỉnh Sửa</button>
+                                        <button className='btn btn-outline-primary' onClick={() => {
+                                            const action = {
+                                                type:'CHINH_SUA',
+                                                nguoiDungChinhSua:nguoiDung
+                                            }
+                                            this.props.dispatch(action)
+                                        }}>Chỉnh Sửa</button>
                                     </td>
                             </tr>
                         })
